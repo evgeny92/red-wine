@@ -15,7 +15,7 @@
                             <div class="blog-left">
                                 <div class="blog-left-left">
                                     <p>Posted By <a href="#">Admin</a> on {{ $categoryPost->created_at->format('d.m.y H:i') }} </p>
-                                    <a href="#"><img src="{{ asset('images/posts/'. $categoryPost->image) }}" alt="" /></a>
+                                    <img src="{{ asset('images/posts/'. $categoryPost->image) }}" alt="" />
                                 </div>
                                 <div class="blog-left-right">
                                     <a href="{{ route('pages.blog.single', $categoryPost->slug_post) }}">{{ $categoryPost->title }}</a>

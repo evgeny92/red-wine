@@ -34,7 +34,7 @@
                                 <b>Published on</b> {{ $post->created_at->format('F d, Y') }} / <b>Category</b>
                                 <a href="{{ url('blog/category', $post->category->slug_cat) }}"> {{ $post->category->name }}</a>
                             </p>
-                            <a href="#"><img src="{{ asset('images/posts/'. $post->image) }}" alt="" /></a>
+                            <img src="{{ asset('images/posts/'. $post->image) }}" alt="" />
                         </div>
                         <div class="blog-left-right">
                             <a href="{{ url('blog', $post->slug_post) }}">{{ $post->title }}</a>
