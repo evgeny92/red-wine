@@ -61,7 +61,7 @@ class PagesController extends Controller {
 
       if($request->ajax() && !empty($request->all())){
          $contact = $request;
-         Mail::to('evgeny@mail.ru')->send(new Contact($contact));
+         Mail::to('evgenyweb92@gmail.com')->send(new Contact($contact));
          $result = true;
       }
       return response()->json(['result' => $result]);
