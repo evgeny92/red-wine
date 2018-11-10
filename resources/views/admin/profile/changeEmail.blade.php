@@ -13,7 +13,7 @@
                         {!! Form::open(['route'=>'changeEmail','data-parsley-validate'=>'']) !!}
                         <div class="form-group">
                             <label>Email:</label>
-                            <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder="Enter new email" class="form-control" maxlength="20"  required>
+                            <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder="Enter new email" class="form-control" required>
                         </div>
                         <button type="submit" class="btn btn-info btn-fill btn-md">Change Email</button>
                         {!! Form::close() !!}
